@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+         <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+
+         <div class="header-text">
+            <p>FULL STACK DEVELOPER</p>
+            <h1>Hi, i am <span>Anirban</span> <br> From India</h1>
+         </div>
+       </div> 
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2025-01-20 at 1.54.47 AM.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Anirban Das, a Computer Science graduate from Kanchrapara College, currently pursuing my Master’s degree in Computer Applications at AOT College under MAKAUT University. Beyond my academic journey, I am deeply passionate about backend development, specializing in Python and Django. I thrive on exploring and implementing the intricate logic that powers robust backend systems, which fuels my love for solving complex problems and creating efficient solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>SQL</span><br>Known DataBase using SQL</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachalor's</span><br>Graduated from Kanchrapara College, University Of Kalyani in August 2024 with a CGPA of 7.49.</li>
+                            <li><span>Master’s</span><br>Master's from Academy of Technology College, Maulana Abul Kalam Azad University Of Technology, on-going</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>No Experience gether</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname){
+            
+         }
+    </script>
+</body>
+</html>
