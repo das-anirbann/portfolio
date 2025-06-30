@@ -40,7 +40,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am Anirban Das, a Computer Science graduate from Kanchrapara College, currently pursuing my Master’s degree in Computer Applications at AOT College under MAKAUT University. Beyond my academic journey, I am deeply passionate about backend development, specializing in Python and Django. I thrive on exploring and implementing the intricate logic that powers robust backend systems, which fuels my love for solving complex problems and creating efficient solutions.</p>
+                    <p>I’m Anirban Das, a Computer Science graduate from Kanchrapara College,University of Kalyani. Currently pursuing my Master’s degree in Computer Applications (MCA) at AOT College under MAKAUT University. I am a passionate backend developer with a strong foundation in Python and Django, and I find immense satisfaction in designing efficient, scalable, and maintainable systems.
+
+                    Over time, I’ve worked on several personal projects that reflect my commitment to learning and building real-world solutions. These experiences have helped me become proficient in MySQL, PostgreSQL, Git, and Java GUI development, and have shaped me into a well-rounded aspiring Full Stack Developer.
+
+                    Beyond code, I take pride in being a strong problem solver, an effective team player, and someone who constantly seeks leadership opportunities and challenges that foster growth. I thrive in collaborative environments and am always eager to learn new technologies and improve my development stack.
+
+                    As I continue my journey, my goal is to evolve into a proficient Full Stack Developer, capable of contributing to dynamic, high-impact projects that make a difference.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -80,15 +86,18 @@
          <div class="services-list">
          <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Full Stack</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, numquam.</p>
-            <a href="#">Learn more</a>
+            <h2>Full Stack App Development</h2>
+            <p class="short-text"> I create user-friendly desktop apps using Java Swing for projects like banking systems.</p>
+            <p class="full-text" style="display: none;">These applications include form validation, data persistence with MySQL/PostgreSQL, and smooth GUI operations. I focus on modular code and responsive interaction across user actions.</p>
+            <button class="learn-more-btn" onclick="toggleDescription(this)">Learn more</button>
          </div>
+
+
          <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Full Stack</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio consequuntur velit deserunt cupiditate sequi dolore, consectetur quam iusto minus?</p>
-            <a href="#">Learn more</a>
+            <h2>Backend & Database Design</h2>
+            <p>I design secure backend systems and well-structured databases using Java and SQL.</p>
+            <button onclick="openpopup('backend')">Learn more</button>
          </div>
          <div>
             <i class="fa-solid fa-code"></i>
@@ -99,6 +108,13 @@
       </div>
     </div>
 </div>
+<div id="popup-backend" class="popup-overlay">
+    <div class="popup-card">
+        <span class="close-btn" onclick="closepopup('backend')">&times;</span>
+            <h2>Backend & Database Design</h2>
+            <p> I design secure, efficient backend systems using Java and well-structured databases like MySQL or PostgreSQL. My focus is on modular logic, query optimization, and real-world data management including form validations, login authentication, and transaction-like features. I also use Git for version control across projects.</p>
+    </div>
+</div>
 
 <!---------------------------------portfolio------------------------------------->
 <div id="portfolio">
@@ -106,11 +122,11 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images\about.png">
+                <img src="images/bank.png">
                 <div class="layer">
                     <h3>Banking App</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dignissimos?</p>
-                    <a herf="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    <a href="https://github.com/das-anirbann/Bank_Management_System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -157,6 +173,7 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
          </div>
     </div>
