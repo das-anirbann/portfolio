@@ -12,12 +12,14 @@
        <div class="container">
          <nav>
             <img src="images/logo.jpg" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
          </nav>
 
          <div class="header-text">
@@ -72,7 +74,7 @@
     <!-----------------------------------SERVICE-------------------------------------->
 
 <div id="services">
-    <div class="contanier">
+    <div class="container">
          <h1 class="sub-title">My Services</h1>
          <div class="services-list">
          <div>
@@ -99,7 +101,7 @@
 
 <!---------------------------------portfolio------------------------------------->
 <div id="portfolio">
-    <div class="contanier">
+    <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
@@ -131,6 +133,34 @@
     </div>
 </div>  
 
+<!-------------------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>anirban140963@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8101733466</p>
+                 <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100051984051305"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/anirbandas_45?igsh=MXQ2Nm5pcjJ0bDBtZg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anirban-das-b192a9260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/das-anirbann"><i class="fa-brands fa-github"></i></a>
+                 </div>
+                 <a href="d.pdf" download class="btn btn2" >Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+         </div>
+    </div>
+    <div class="thanksection">Tnanking you to visit my portfolio<i class="fa-solid fa-heart"></i></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
