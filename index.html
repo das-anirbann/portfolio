@@ -87,25 +87,34 @@
          <div>
             <i class="fa-solid fa-code"></i>
             <h2>Full Stack App Development</h2>
-            <p class="short-text"> I create user-friendly desktop apps using Java Swing for projects like banking systems.</p>
-            <p class="full-text" style="display: none;">These applications include form validation, data persistence with MySQL/PostgreSQL, and smooth GUI operations. I focus on modular code and responsive interaction across user actions.</p>
-            <button class="learn-more-btn" onclick="toggleDescription(this)">Learn more</button>
+            <p>I create user-friendly desktop apps using Java Swing for projects like banking systems.</p>
+            <button class="learn-more-btn" onclick="openpopup('stack')">Learn more</button>
          </div>
 
 
          <div>
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-database"></i>
             <h2>Backend & Database Design</h2>
             <p>I design secure backend systems and well-structured databases using Java and SQL.</p>
-            <button onclick="openpopup('backend')">Learn more</button>
+            <button class="learn-more-btn" onclick="openpopup('backend')">Learn more</button>
          </div>
+
          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Full Stack</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio consequuntur velit deserunt cupiditate sequi dolore, consectetur quam iusto minus?</p>
-            <a href="#">Learn more</a>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Version Control & Collaboration</h2>
+            <p>I manage code with Git & GitHub, contributing through commits, branching, and repository management across personal projects.</p>
+            <button class="learn-more-btn" onclick="openpopup('git')">Learn more</button>
          </div>
       </div>
+    </div>
+</div>
+
+
+<div id="popup-stack" class="popup-overlay">
+    <div class="popup-card">
+        <span class="close-btn" onclick="closepopup('stack')">&times;</span>
+            <h2>Full Stack App Development</h2>
+            <p>These applications include form validation, data persistence with MySQL/PostgreSQL, and smooth GUI operations. I focus on modular code and responsive interaction across user actions.</p>
     </div>
 </div>
 <div id="popup-backend" class="popup-overlay">
@@ -115,7 +124,17 @@
             <p> I design secure, efficient backend systems using Java and well-structured databases like MySQL or PostgreSQL. My focus is on modular logic, query optimization, and real-world data management including form validations, login authentication, and transaction-like features. I also use Git for version control across projects.</p>
     </div>
 </div>
-
+<div id="popup-git" class="popup-overlay">
+   <div class="popup-card">
+        <span class="close-btn" onclick="closepopup('git')">&times;</span>
+            <h2>Version Control & Collaboration</h2>
+            <p>
+            I use Git and GitHub to efficiently manage version control for my projects. 
+            This includes creating and managing branches, handling pull/push operations, 
+            merging updates, and tracking changes through commit history. I follow best practices in collaborative development workflows, even across solo and team-based projects.
+            </p>
+   </div>
+</div>
 <!---------------------------------portfolio------------------------------------->
 <div id="portfolio">
     <div class="container">
